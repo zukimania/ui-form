@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Responsive Form Design</title>
+        <style>
+            body {
+                /* background-color: #24569c; */
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                  overflow: hidden;
+            }
+            .ball{
+                border-radius: 50%;
+                background: linear-gradient(70deg, #2313d2, #3c8af7);
+                position: absolute;
+                top: 48%;
+                left: 18%;
+                height: 350px;
+                width: 350px;
+                z-index: -99999;
+            }
+            .i{
+                  border-radius: 50%;
+                background: linear-gradient(70deg, #2313d2, #3c8af7);
+                position: absolute;
+                top: -10%;
+                left: 60%;
+                height: 350px;
+                width: 350px;
+                z-index: -99999;
+            }
+    
+            .container {
+                max-width: 350px;
+                /* width: 100%; */
+                margin: 0 auto;
+                padding: 20px;
+                background:linear-gradient( 90deg, #3c8af7, #0e7ea3);
+                border-radius: 5px;
+                box-sizing: border-box;
+                margin-top: 50px;
+            }
+    
+            .container h2 {
+                text-align: center;
+            }
+    
+            .form-group {
+                margin-bottom: 20px;
+            }
+    
+            .form-group label {
+                display: block;
+                font-weight: bold;
+            }
+
+            #message{
+              width: 98%;
+            }
+    
+            .form-group input {
+                width: 95%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+    
+            .form-group input[type="submit"] {
+                background-color: orange;
+                color: #fff;
+                cursor: pointer;
+                width: 50%;
+                justify-content: center;
+                display: flex;
+                margin: auto;
+            }
+            @media screen and (max-width: 768px) {
+                .ball{
+                    left: -20%;
+                }
+                .container{
+                    margin-top: 20%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="ball"></div>
+        <div class="i"></div>
+        <!-- <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div>
+        <div class="i"></div> -->
+        <div class="container">
+            <h2>Responsive Form</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+    
+    </html>
+
+</body>
+</html>
